@@ -13,4 +13,4 @@ class Employee(EmployeeBase):
     id: int
 
     class Config:
-        from_attributes = True  # Use from_attributes instead of orm_mode
+        from_attributes = True
