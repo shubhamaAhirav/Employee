@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from .db.connection import Base, engine
-from .routes import employee
+from db.connection import Base, engine
+from routes import employee
 
 Base.metadata.create_all(bind=engine)
 

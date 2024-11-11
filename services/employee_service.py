@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
-from ..models import employee as models
-from ..schemas import employee as schemas
+from models import employee as models
+from schemas import employee as schemas
 
 def get_employee(db: Session, employee_id: int):
     return db.query(models.Employee).filter(models.Employee.id == employee_id).first()
