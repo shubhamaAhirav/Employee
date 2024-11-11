@@ -6,5 +6,4 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Include Employee router
 app.include_router(employee.router, prefix="/employees", tags=["employees"])
